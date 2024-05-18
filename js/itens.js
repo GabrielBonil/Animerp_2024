@@ -524,23 +524,92 @@ const itens = [
 ]
 
 function addClassesFromSplit(element, string, separator = ' ') {
-    var newText = fixTags(string, tags);
+    var newText = fixTags(string.toLowerCase(), tags);
     const substrings = newText.split(separator);
     substrings.forEach((substring) => {
         element.classList.add(substring);
     });
 }
 
-function fixTags(text, tags){
+function fixTags(text, tags) {
     let result = '';
 
-    for (const key in tags){
-        if (text.includes(key)){
+    for (const key in tags) {
+        if (text.includes(key.toLowerCase())) {
             result += tags[key] + " ";
         }
     }
 
     return result.trim();
+}
+
+function addTextFromClasses(element, text) {
+    var newText = fixText(text.toLowerCase(), tags);
+    element.textContent = newText;
+}
+
+function fixText(text, tags) {
+    let result = '';
+
+    for (const key in tags) {
+        if (text.includes(key.toLowerCase())) { // Comparação de chave e texto ignorando maiúsculas e minúsculas
+            result += key.charAt(0).toUpperCase() + key.slice(1) + " "; // Transforma a primeira letra em maiúscula e concatena com o restante da chave
+        }
+    }
+    
+    return result.trim();
+}
+
+function openModal(item) {
+    var modal = document.querySelector('.modal');
+    var modalDetails = document.querySelector('.modalDetails');
+
+    modalDetails.innerHTML = '';
+
+    var titleModal = document.createElement('h2');
+    titleModal.textContent = item.titulo;
+    titleModal.classList.add("modalTitle");
+    modalDetails.appendChild(titleModal);
+
+    var subtitleModal = document.createElement('p');
+    subtitleModal.textContent = item.subtitulo;
+    subtitleModal.classList.add("modalSubtitle");
+    modalDetails.appendChild(subtitleModal);
+
+    var imageModal = document.createElement('img');
+    imageModal.src = item.imagem === "" ? "img/" + item.titulo + ".jpg" : item.imagem;
+    modalDetails.appendChild(imageModal);
+
+    var tagModal = document.createElement('p');
+    tagModal.classList.add("modalTag");
+    // tagModal.textContent = item.atividade;
+    addTextFromClasses(tagModal, item.atividade);
+    modalDetails.appendChild(tagModal);
+
+    var localModal = document.createElement('p');
+    localModal.classList.add("localModal");
+    localModal.innerHTML = "Local: <span>" + item.local + "</span>";
+    modalDetails.appendChild(localModal);
+
+    var diaModal = document.createElement('p');
+    diaModal.textContent = item.dia;
+    diaModal.classList.add("modalDia");
+    modalDetails.appendChild(diaModal);
+
+    var horarioModal = document.createElement('p');
+    horarioModal.textContent = "Horário: " + item.horario;
+    modalDetails.appendChild(horarioModal);
+
+    var ingressosModal = document.createElement('p');
+    ingressosModal.textContent = "Ingressos: " + item.ingressos;
+    modalDetails.appendChild(ingressosModal);
+
+    var textModal = document.createElement('p');
+    textModal.innerHTML = item.descricao.replace(/\n/g, "<br>");
+    modalDetails.appendChild(textModal);
+
+    // Exibe o modal
+    modal.style.display = "block";
 }
 
 function createCards(itens) {
@@ -569,8 +638,9 @@ function createCards(itens) {
             cardTitle.classList.add("card_title");
             cardTitle.textContent = item.titulo;
 
-            // var subtituloElement = document.createElement('h3');
-            // subtituloElement.textContent = item.subtitulo;
+            var cardSubtitle = document.createElement('p');
+            cardSubtitle.classList.add("card_subtitle");
+            cardSubtitle.textContent = item.subtitulo;
 
             // var descricaoElement = document.createElement('div');
             // descricaoElement.innerHTML = item.descricao;
@@ -579,13 +649,26 @@ function createCards(itens) {
             cardText.classList.add("card_text");
             cardText.textContent = item.horario;
 
+            // var cardModal = document.createElement("button");
+            // cardModal.textContent = "Abrir Modal";
+            // cardModal.classList.add("cardModal");
+            // cardModal.addEventListener('click', function () {
+            //     openModal(item);
+            // });
+
             card.appendChild(cardImage);
 
             cardBody.appendChild(cardTitle);
+            cardBody.appendChild(cardSubtitle);
             cardBody.appendChild(cardText);
+            // cardBody.appendChild(cardModal);
 
             card.appendChild(cardBody);
-
+            
+            card.addEventListener('click', function () {
+                openModal(item);
+            });
+            
             cards.appendChild(card);
         });
     }
