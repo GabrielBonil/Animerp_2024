@@ -14,7 +14,7 @@ const tags = {
     "Espaço de Tecnologias e Artes": "espaco_tecnologia",
     "Sala de Expressão Corporal 2": "sala_corporal_2",
     "Sala de Expressão Artística": "sala_artistica",
-    "em vários locais da unidade": "varios",
+    "Em vários locais da unidade": "varios",
     "Comedoria - área externa": "comedoria_externa",
     "Parque Aquático": "parque",
     "Sala de Expressão Corporal 1": "sala_corporal_1",
