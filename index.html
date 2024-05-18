@@ -6,107 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronograma Animerp 2024</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/itens.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 
 <body>
     <!-- Filtros -->
     <div class="container">
+
+        <!-- Filtro Filtros -->
+        <div class="filter">
+            <button class="dia active">Dia</button>
+            <button class="local">Local</button>
+            <button class="atividade">Atividade</button>
+        </div>
+
         <div class="filter_buttons">
-            <!-- Filtro Locais -->
+
             <button class="active" data-name="all">Show All</button>
-            <button data-name="teatro">Teatro</button>
-            <button data-name="ginasio_evento">Ginásio de Eventos</button>
-            <button data-name="comedoria">Comedoria</button>
-            <button data-name="oficina_1">Espaço Oficina 1</button>
-            <button data-name="ginasio_esporte">Ginásio de Esportes</button>
-            <button data-name="area_externa">Área externa - gramado</button>
-            <button data-name="deck">Parque Aquático - Deck</button>
-            <button data-name="espaco_tecnologia">Espaço de Tecnologias e Artes</button>
-            <button data-name="sala_corporal_2">Sala de Expressão Corporal 2</button>
-            <button data-name="sala_artistica">Sala de Expressão Artística</button>
-            <button data-name="varios">em vários locais da unidade</button>
-            <button data-name="comedoria_externa">Comedoria - área externa</button>
-            <button data-name="parque">Parque Aquático</button>
-            <button data-name="sala_corporal_1">Sala de Expressão Corporal 1</button>
-            <button data-name="convivencia">Área de convivência</button>
-            <button data-name="biblioteca">Biblioteca</button>
-            
-            
+
+            <!-- Filtro Dias -->
+            <button class="dia" data-name="quarta">Quarta</button>
+            <button class="dia" data-name="sexta">Sexta</button>
+            <button class="dia" data-name="sabado">Sábado</button>
+            <button class="dia" data-name="domingo">Domingo</button>
+
+            <!-- Filtro Locais -->
+            <button class="local hide" data-name="teatro">Teatro</button>
+            <button class="local hide" data-name="ginasio_evento">Ginásio de Eventos</button>
+            <button class="local hide" data-name="comedoria">Comedoria</button>
+            <button class="local hide" data-name="oficina_1">Espaço Oficina 1</button>
+            <button class="local hide" data-name="ginasio_esporte">Ginásio de Esportes</button>
+            <button class="local hide" data-name="area_externa">Área externa - gramado</button>
+            <button class="local hide" data-name="deck">Parque Aquático - Deck</button>
+            <button class="local hide" data-name="espaco_tecnologia">Espaço de Tecnologias e Artes</button>
+            <button class="local hide" data-name="sala_corporal_2">Sala de Expressão Corporal 2</button>
+            <button class="local hide" data-name="sala_artistica">Sala de Expressão Artística</button>
+            <button class="local hide" data-name="varios">em vários locais da unidade</button>
+            <button class="local hide" data-name="comedoria_externa">Comedoria - área externa</button>
+            <button class="local hide" data-name="parque">Parque Aquático</button>
+            <button class="local hide" data-name="sala_corporal_1">Sala de Expressão Corporal 1</button>
+            <button class="local hide" data-name="convivencia">Área de convivência</button>
+            <button class="local hide" data-name="biblioteca">Biblioteca</button>
+
+
             <!-- Filtro Atividades -->
-            <!-- <button class="active" data-name="all">Show All</button>
-            <button data-name="cinema">Cinema e Vídeo</button>
-            <button data-name="exibicao">Exibição</button>
-            <button data-name="jovens">Jovens</button>
-            <button data-name="musica">Música</button>
-            <button data-name="show">Show</button>
-            <button data-name="bate-papo">Bate-Papo</button>
-            <button data-name="acao">Ações para Cidadania</button>
-            <button data-name="artes">Artes Visuais</button>
-            <button data-name="tecnologias">Tecnologias e Artes</button>
-            <button data-name="oficina">Oficina</button>
-            <button data-name="esporte">Esporte e Atividade Física</button>
-            <button data-name="criancas">Crianças</button>
-            <button data-name="vivencia">Vicência</button>
-            <button data-name="danca">Dança</button>
-            <button data-name="performance">Performance</button>
-            <button data-name="intervencao">Intervenção</button>
-            <button data-name="alimentacao">Alimentação</button>
-            <button data-name="exposicao">Exposição</button>
-            <button data-name="instalacao">Instalação</button>
-            <button data-name="literatura">Literatura</button> -->
+            <button class="atividade hide" data-name="cinema">Cinema e Vídeo</button>
+            <button class="atividade hide" data-name="exibicao">Exibição</button>
+            <button class="atividade hide" data-name="jovens">Jovens</button>
+            <button class="atividade hide" data-name="musica">Música</button>
+            <button class="atividade hide" data-name="show">Show</button>
+            <button class="atividade hide" data-name="bate-papo">Bate-Papo</button>
+            <button class="atividade hide" data-name="acao">Ações para Cidadania</button>
+            <button class="atividade hide" data-name="artes">Artes Visuais</button>
+            <button class="atividade hide" data-name="tecnologias">Tecnologias e Artes</button>
+            <button class="atividade hide" data-name="oficina">Oficina</button>
+            <button class="atividade hide" data-name="esporte">Esporte e Atividade Física</button>
+            <button class="atividade hide" data-name="criancas">Crianças</button>
+            <button class="atividade hide" data-name="vivencia">Vicência</button>
+            <button class="atividade hide" data-name="danca">Dança</button>
+            <button class="atividade hide" data-name="performance">Performance</button>
+            <button class="atividade hide" data-name="intervencao">Intervenção</button>
+            <button class="atividade hide" data-name="alimentacao">Alimentação</button>
+            <button class="atividade hide" data-name="exposicao">Exposição</button>
+            <button class="atividade hide" data-name="instalacao">Instalação</button>
+            <button class="atividade hide" data-name="literatura">Literatura</button>
         </div>
 
         <!-- Imagens -->
         <div class="filterable_cards">
-
-            <div class="card" data-name="cinema exibicao jovens">
-                <img src="img/O Menino e a Garça.jpg" alt="O Menino e a Garça">
-                <div class="card_body">
-                    <h6 class="card_title">O Menino e a Garça</h6>
-                    <p class="card_text">20h</p>
-                </div>
-            </div>
-
-            <div class="card" data-name="phones">
-                <img src="img/O Menino e a Garça.jpg" alt="O Menino e a Garça">
-                <div class="card_body">
-                    <h6 class="card_title">O Menino e a Garça</h6>
-                    <p class="card_text">20h</p>
-                </div>
-            </div>
-
-            <div class="card" data-name="phones">
-                <img src="img/O Menino e a Garça.jpg" alt="O Menino e a Garça">
-                <div class="card_body">
-                    <h6 class="card_title">O Menino e a Garça</h6>
-                    <p class="card_text">20h</p>
-                </div>
-            </div>
-
-            <div class="card" data-name="phones">
-                <img src="img/O Menino e a Garça.jpg" alt="O Menino e a Garça">
-                <div class="card_body">
-                    <h6 class="card_title">O Menino e a Garça</h6>
-                    <p class="card_text">20h</p>
-                </div>
-            </div>
-
-            <div class="card" data-name="phones">
-                <img src="img/O Menino e a Garça.jpg" alt="O Menino e a Garça">
-                <div class="card_body">
-                    <h6 class="card_title">O Menino e a Garça</h6>
-                    <p class="card_text">20h</p>
-                </div>
-            </div>
-
-            <div class="card" data-name="phones">
-                <img src="img/O Menino e a Garça.jpg" alt="O Menino e a Garça">
-                <div class="card_body">
-                    <h6 class="card_title">O Menino e a Garça</h6>
-                    <p class="card_text">20h</p>
-                </div>
-            </div>
 
         </div>
     </div>
