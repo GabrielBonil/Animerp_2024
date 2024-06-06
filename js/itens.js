@@ -20,6 +20,7 @@ const tags = {
     "Sala de Expressão Corporal 1": "sala_corporal_1",
     "Área de convivência": "convivencia",
     "Biblioteca": "biblioteca",
+    "Quadras Externas": "quadra_externa",
 
 
     "Cinema e Vídeo": "cinema",
@@ -45,26 +46,39 @@ const tags = {
 }
 
 const itens = [
-    {
-        "titulo": "O Menino e a Garça",
-        "subtitulo": "Direçao: Hayao Miyazaki",
-        "atividade": "Cinema e VídeoexibiçãoJovens",
-        "local": "Teatro",
-        "imagem": "img/O Menino e a Garça.jpg",
-        "descricao": `Indicado ao Oscar de Melhor Animação, O Menino e a Garça faz parte do catálogo do Studio Ghibli e conta com a direção de Hayao Miyazaki.
+    // {
+    //     "titulo": "Luminária do Zordon",
+    //     "subtitulo": "",
+    //     "atividade": "JovensTecnologias e Artes",
+    //     "local": "Sala de Múltiplo Uso",
+    //     "imagem": "img/Luminária do Zordon.png",
+    //     "descricao": `Prepare-se para explorar técnicas inovadoras, mergulhar em processo de criação e na arte de construir uma luminária.
 
-        Baseado no livro de Genzaburo Yoshino de 1937, o longa conta a história de Mahito Maki, um jovem que vive no Japão. Após a morte de sua mãe, Mahito se muda com a família para uma propriedade no campo junto com sua nova madrasta, onde uma série de eventos misteriosos o levam a uma torre antiga e isolada, lar de uma garça travessa. Quando sua madrasta desaparece, o menino segue a garça e entra num mundo fantástico, habitado pelos vivos e pelos mortos, e embarca em uma jornada épica ao lado da garça que o guia a descobertas sobre os segredos deste mundo e a verdade sobre si mesmo.
+    //     Seja você um novato entusiasmado ou um veterano experiente, esta oficina oferece uma jornada emocionante rumo ao visual dos seus heróis favoritos, com o artista Sam Barrionuevo.`,
+    //     "horario": "Das 19h às 21h",
+    //     "dia": "Quarta e Quinta",
+    //     "ingressos": "Espaço limitado"
+    // },
+    // {
+    //     "titulo": "O Menino e a Garça",
+    //     "subtitulo": "Direçao: Hayao Miyazaki",
+    //     "atividade": "Cinema e VídeoexibiçãoJovens",
+    //     "local": "Teatro",
+    //     "imagem": "img/O Menino e a Garça.jpg",
+    //     "descricao": `Indicado ao Oscar de Melhor Animação, O Menino e a Garça faz parte do catálogo do Studio Ghibli e conta com a direção de Hayao Miyazaki.
+
+    //     Baseado no livro de Genzaburo Yoshino de 1937, o longa conta a história de Mahito Maki, um jovem que vive no Japão. Após a morte de sua mãe, Mahito se muda com a família para uma propriedade no campo junto com sua nova madrasta, onde uma série de eventos misteriosos o levam a uma torre antiga e isolada, lar de uma garça travessa. Quando sua madrasta desaparece, o menino segue a garça e entra num mundo fantástico, habitado pelos vivos e pelos mortos, e embarca em uma jornada épica ao lado da garça que o guia a descobertas sobre os segredos deste mundo e a verdade sobre si mesmo.
         
-        A narrativa conta ainda com detalhes de experiências vividas pelo próprio diretor durante sua infância.
+    //     A narrativa conta ainda com detalhes de experiências vividas pelo próprio diretor durante sua infância.
         
-        <strong>Ficha Técnica</strong>
-        Título original: Kimitachi wa Dō Ikiru ka. 2023. Japão.
-        Direção e roteiro: Hayao Miyazaki
-        Elenco: Soma Santoki, Masaki Suda, Kô Shibasaki`,
-        "horario": "Das 20h às 21h30",
-        "dia": "Quarta",
-        "ingressos": "Retirada de ingressos limitados com 30 minutos antes do início da atividade"
-    },
+    //     <strong>Ficha Técnica</strong>
+    //     Título original: Kimitachi wa Dō Ikiru ka. 2023. Japão.
+    //     Direção e roteiro: Hayao Miyazaki
+    //     Elenco: Soma Santoki, Masaki Suda, Kô Shibasaki`,
+    //     "horario": "Das 20h às 21h30",
+    //     "dia": "Quarta",
+    //     "ingressos": "Retirada de ingressos limitados com 30 minutos antes do início da atividade"
+    // },
     {
         "titulo": "Baile Medieval – com Terra Celta",
         "subtitulo": "e com a participação do grupo artístico Ligia Aydar",
@@ -77,7 +91,9 @@ const itens = [
         
         É uma oportunidade imperdível para vivenciar a atmosfera mística e festiva dos tempos medievais.
         
-        Para o Baile Medieval, o Sesc Rio Preto convida os participantes a virem fantasiados a caráter (traje típico não obrigatório)`,
+        Para o Baile Medieval, o Sesc Rio Preto convida os participantes a virem fantasiados a caráter (traje típico não obrigatório)
+        
+        VENDA E ENTRADA PROIBIDA DE BEBIDA ALCOÓLICA`,
         "horario": "Das 19h às 20h30",
         "dia": "Sexta",
         "ingressos": "Sem retirada de ingressos. Lugares limitados."
@@ -173,7 +189,7 @@ const itens = [
         Um momento para os fãs relembrarem suas canções favoritas da televisão e se emocionarem com as interpretações de Diogo Miyahara e a presença especial dos cosplayers do Changeman.`,
         "horario": "Das 16h às 17h",
         "dia": "Sábado",
-        "ingressos": ''
+        "ingressos": 'Lugares limitados'
     },
     {
         "titulo": "Síntese Narrativa dos Quadrinhos",
@@ -195,7 +211,7 @@ const itens = [
         "descricao": `Para abrir o tradicional desfile Cosplay, jovens dançarinos da cidade irão incorporar seus personagens favoritos em uma apresentação de dança vibrante, unindo o K-pop e o universo dos Animes, Games e Seriados.`,
         "horario": "Das 17h20 às 17h30",
         "dia": "Sábado",
-        "ingressos": ''
+        "ingressos": 'Lugares limitados sem retirada de ingressos'
     },
     {
         "titulo": "Kung Fu: a arte marcial milenar",
@@ -208,7 +224,7 @@ const itens = [
         Esta modalidade foi criada na China e seus movimentos de ataque e defesa foram inspirados na natureza e na observação dos movimentos dos animais.`,
         "horario": "Das 12h30 às 13h",
         "dia": "Domingo",
-        "ingressos": ''
+        "ingressos": 'Lugares limitados'
     },
     {
         "titulo": "Vivência de Kung Fu",
@@ -263,7 +279,7 @@ const itens = [
         Indicado para crianças até 6 anos.`,
         "horario": "Das 10h às 15h30",
         "dia": "Sábado Domingo",
-        "ingressos": ''
+        "ingressos": 'Lugares limitados'
     },
     {
         "titulo": "Arena K-Pop",
@@ -329,18 +345,46 @@ const itens = [
         "ingressos": 'Retirada de ingressos limitados com uma hora de antecedência'
     },
     {
+        "titulo": "Maquiagem Artística para Crianças",
+        "subtitulo": "Fabiane Facondini, maquiadora",
+        "atividade": "Jovensvivência",
+        "local": "Comedoria - Área Externa",
+        "imagem": "img/Maquiagem Artística para Crianças.png",
+        "descricao": `Uma experiência lúdica e divertida pensada especialmente para as crianças, onde a arte da maquiagem encontra o universo da fantasia!
+
+        Até 12 anos`,
+        "horario": "Das 13h às 17h",
+        "dia": "Sábado Domingo",
+        "ingressos": 'Inscrições limitadas no local'
+    },
+    {
+        "titulo": "Espaço Toy Story",
+        "subtitulo": "com Up Brinquedos",
+        "atividade": "Jovensinstalação",
+        "local": "Ginásio de Esportes",
+        "imagem": "img/Espaço Toy Story.png",
+        "descricao": `Ao infinito e além! O sucesso do Toy Story se encontra com a autenticidade da nossa região neste espaço de aventura.
+
+        Tente se manter no touro o máximo possível e aproveite para fazer uns cliques com os personagens mais icônicos do filme.
+        
+        A partir de 4 anos`,
+        "horario": "Das 12h às 17h",
+        "dia": "Sábado Domingo",
+        "ingressos": 'Inscrições limitadas no local'
+    },
+    {
         "titulo": "Batalha Campal",
         "subtitulo": "com Dragon Style Swordplay",
         "atividade": "JovensMúsicavivência",
         "local": "Ginásio de Esportes",
         "imagem": "",
         "descricao": `Teste seus talentos de força e habilidade, monte seu time, estratégias, e venha participar desta Batalha Campal com a equipe mais tradicional de Rio Preto, Dragon Style Swordplay!`,
-        "horario": "Das 12h às 17h ",
+        "horario": "Das 12h às 17h",
         "dia": "Sábado Domingo",
         "ingressos": 'Espaço limitado'
     },
     {
-        "titulo": "Trapezoidz",
+        "titulo": "Trapezoidz Power Rangers",
         "subtitulo": "com Coletivo Uns que Pensa Arte",
         "atividade": "JovensTecnologias e Artesoficina",
         "local": "Espaço Oficina 1",
@@ -376,7 +420,7 @@ const itens = [
         "descricao": `Nesta intervenção, os artistas Hélio Kaname e Wesley Estácio, criarão caricaturas do público presente no estilo dos mangás.`,
         "horario": "Das 13h às 17h",
         "dia": "Sábado Domingo",
-        "ingressos": 'Atendimento por ordem de chegada'
+        "ingressos": 'Inscrições limitadas no local'
     },
     {
         "titulo": "O Leão e o Dragão Chinês",
@@ -387,14 +431,14 @@ const itens = [
         "descricao": `Neste espetáculo, a energia vibrante das cores, os ritmos envolventes dos sons, os movimentos graciosos e poderosos, e a sincronia perfeita entre os dançarinos criam um impacto digno de uma expressão artística que passeia pelos séculos trazendo a tradição, a beleza e o fascínio pela cultura chinesa.`,
         "horario": "Das 14h às 17h",
         "dia": "Sábado Domingo",
-        "ingressos": ''
+        "ingressos": 'Lugares limitados'
     },
     {
         "titulo": "Espaço Maid Café Sailor Moon",
         "subtitulo": "Com Spirit Maid Café",
         "atividade": "AlimentaçãooficinaJovens",
         "local": "Sala de Expressão Artística",
-        "imagem": "",
+        "imagem": "img/Espaço Maid Café Sailor Moon.png",
         "descricao": `Guiados pelas habilidosas Sailors, os participantes serão ensinados a preparar pratos deliciosos com um toque especial de fofura. Desde sobremesas decoradas até petiscos encantadores, cada receita é uma experiência culinária divertida.
         Seja você um iniciante na cozinha ou um entusiasta da gastronomia, o Maid Café oferece uma experiência única que combina aprendizado, entretenimento e degustação em um ambiente alegre e acolhedor.
         
@@ -412,7 +456,7 @@ const itens = [
         "descricao": `Adentre o mundo mágico de “A Viagem de Chihiro” em uma instalação artística única, inspirada na obra-prima de Hayao Miyazaki, esta experiência imersiva transporta os visitantes para o universo encantado do filme. Um dos pontos altos da instalação é o espaço dedicado à icônica cena do vagão, onde os visitantes podem recriar a imagem ao lado do lendário personagem Kaonashi, conhecido como Sem Rosto.`,
         "horario": "Das 12h às 18h",
         "dia": "Sábado Domingo",
-        "ingressos": ''
+        "ingressos": 'Lugares limitados'
     },
     {
         "titulo": "Feira Geek",
@@ -428,6 +472,34 @@ const itens = [
         "ingressos": ''
     },
     {
+        "titulo": "Espaço Roller Air Gear",
+        "subtitulo": "Com Skatingland",
+        "atividade": "Jovensvivência",
+        "local": "Quadras Externas",
+        "imagem": "img/Espaço Roller Air Gear.png",
+        "descricao": `E os patins também terão espaço no Animerp. Em um espaço aberto os participantes terão a oportunidade de experimentar a sensação de liberdade e velocidade dos personagens do anime “Air Gear” enquanto deslizam de patins pelo espaço. A atividade contempla o empréstimo dos materiais para o público experimentar a atividade.`,
+        "horario": "Das 13h às 18h",
+        "dia": "Sábado Domingo",
+        "ingressos": 'Entrega de senhas limitadas meia hora antes'
+    },
+    {
+        "titulo": "Parede de Escalada I Iwakakeru – Sport Climbing Girls",
+        "subtitulo": "Com Altitude Escalada",
+        "atividade": "Jovensvivência",
+        "local": "Esporte e Atividade Físicavivência",
+        "imagem": "img/Parede de Escalada I Iwakakeru – Sport Climbing Girls.png",
+        "descricao": `Com paredes coloridas e desafios variados, cada escalador terá a chance de superar seus limites e sentir a emoção da conquista ao alcançar o topo.
+
+        Seja você um iniciante ou um experiente escalador, a atividade de escalada inspirada no Anime Iwakakeru – Sport Climbing Girls oferece diversão e adrenalina para todos os amantes de esportes radicais e aventuras verticais.
+        
+        Venha viver essa experiência única e descubra o seu potencial nas alturas!
+        
+        A partir de 7 anos.`,
+        "horario": "Das 13h às 18h",
+        "dia": "Sábado Domingo",
+        "ingressos": 'Inscrições limitadas no local.'
+    },
+    {
         "titulo": "Área Game",
         "subtitulo": "com Arena PlayMater's ",
         "atividade": "Jovens",
@@ -436,7 +508,7 @@ const itens = [
         "descricao": `Ajustem os controles, é hora de mandar ver nos games. Com atari, fliperama, PS2, óculos de realidade virtual, Just Dance e muitos outros. Bora jogar? `,
         "horario": "Das 12h às 18h ",
         "dia": "Sábado Domingo",
-        "ingressos": ''
+        "ingressos": 'Inscrições limitadas no local'
     },
     {
         "titulo": "Espaço RPG e Card Games",
@@ -495,7 +567,42 @@ const itens = [
         Cada esfera carrega consigo um poder capaz de realizar um desejo quando reunidas. Em sua trajetória, o autor teceu a saga épica de “Dragon Ball”, onde a coragem, a amizade e a busca pela superação ecoaram através de cada batalha.`,
         "horario": "Das 12h às 18h",
         "dia": "Sábado Domingo",
-        "ingressos": ''
+        "ingressos": 'Lugares limitados'
+    },
+    {
+        "titulo": "Espaço Kuroko no Basquete",
+        "subtitulo": "Com educadores de atividades físicas e esportivas do Sesc e artistas do GAL (Grupo de Apoio a Loucura de S. J. Rio Preto).",
+        "atividade": "Jovens",
+        "local": "Quadras Externas",
+        "imagem": "img/Espaço Kuroko no Basquete.png",
+        "descricao": `Inspirado pela determinação e paixão dos personagens de Kuroko no Basket, este desafio de basquete oferece uma jornada inesquecível para todos os fãs do anime e amantes do esporte.`,
+        "horario": "Das 13h às 18h",
+        "dia": "Sábado Domingo",
+        "ingressos": 'Inscrições limitadas no local'
+    },
+    {
+        "titulo": "Espaço Haikyuu de Vôlei",
+        "subtitulo": "Com educadores de atividades fisicas e esportivas do Sesc e artistas do GAL (Grupo de Apoio a Loucura de S. J. Rio Preto).",
+        "atividade": "Jovensvivência",
+        "local": "Quadras Externas",
+        "imagem": "img/Espaço Haikyuu de Vôlei.png",
+        "descricao": `Entre em quadra e viva a intensidade do vôlei inspirado no anime “Haikyuu”!
+
+        Na série o estudante Hinata se junta ao clube de vôlei e começa a treinar. Ao longo da trama, adversidades como baixa estatura e falta de experiência acompanham o protagonista, que tem o desafio de evoluir e ajudar o time da escola a voltar a ter momentos de glória no esporte.`,
+        "horario": "Das 13h às 18h",
+        "dia": "Sábado Domingo",
+        "ingressos": 'Inscrições limitadas no local'
+    },
+    {
+        "titulo": "Luderia",
+        "subtitulo": "com Ludum Rio Preto",
+        "atividade": "Jovensvivência",
+        "local": "Área de Convivência",
+        "imagem": "",
+        "descricao": `Espaço especialmente organizado e equipado para você se reunir com a galera para jogar, aprender e conhecer diversos jogos de tabuleiro.`,
+        "horario": "Das 13h às 18h",
+        "dia": "Sábado Domingo",
+        "ingressos": 'Inscrições limitadas no local'
     },
     {
         "titulo": "Discotecagem",
@@ -506,7 +613,7 @@ const itens = [
         "descricao": `Prepare-se para cantar, dançar e se divertir ao som de músicas como o pop, k-pop, animesongs e o melhor do funk brasileiro criando uma atmosfera de celebração e diversão para todas as idades.`,
         "horario": "Das 12h às 18h30",
         "dia": "Sábado Domingo",
-        "ingressos": ''
+        "ingressos": 'Lugares limitados'
     },
     {
         "titulo": "Desfile Cosplay",
@@ -524,7 +631,7 @@ const itens = [
 ]
 
 function addClassesFromSplit(element, string, separator = ' ') {
-    var newText = fixTags(string.toLowerCase(), tags);
+    var newText = fixTags(string, tags);
     const substrings = newText.split(separator);
     substrings.forEach((substring) => {
         element.classList.add(substring);
@@ -535,7 +642,7 @@ function fixTags(text, tags) {
     let result = '';
 
     for (const key in tags) {
-        if (text.includes(key.toLowerCase())) {
+        if (text.toLowerCase().includes(key.toLowerCase())) {
             result += tags[key] + " ";
         }
     }

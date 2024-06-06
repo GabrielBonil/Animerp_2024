@@ -20,19 +20,18 @@ body {
     margin: 50px auto;
 }
 
-.filter {
+.switch,
+.filter,
+.filter_buttons {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
 }
 
+.filter,
 .filter_buttons {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 button {
@@ -47,6 +46,10 @@ button {
 
 .active {
     color: #fff;
+}
+
+.switch .active {
+    background: #8c8c8c;
 }
 
 .filter .active {
@@ -128,7 +131,8 @@ button {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 600px;
+    /*Ou colocar uns 80%, sei lá*/
 }
 
 .modalContent .modalTitle {
@@ -147,8 +151,8 @@ button {
 }
 
 /* .modalContent .modalDia, */
-.modalContent .localModal span, .modalContent .modalTag 
-{
+.modalContent .localModal span,
+.modalContent .modalTag {
     font-size: 16px;
     margin-bottom: 10px;
     line-height: 1.25;
@@ -171,22 +175,35 @@ button {
     cursor: pointer;
 }
 
-/* Estilo do botão modal */
-/* .cardModal {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-} */
+/* Schedule */
+/* div.schedule{} */
 
-/* Estilo do botão modal ao passar o mouse */
-/* .cardModal:hover {
-    background-color: #45a049;
-} */
+.scheduleHeader, .scheduleRow{
+    max-width: 1350px;
+    display: flex;
+    margin: auto auto;
+    text-align: center;
+    border: #333 1px solid;
+}
+
+.scheduleTime,
+.scheduleItem,
+.scheduleDescription {
+    flex: 1;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    border: #333 solid 1px;
+}
+
+.scheduleDescription {
+    /* width: 15%; */
+    flex: 0.75;
+    padding: 0 5px;
+}
+
+/* .scheduleTime {} */
+
+.scheduleItem {
+    background-color: #f0f0f0;
+    /* background-color: #e7f2fd; */
+}
